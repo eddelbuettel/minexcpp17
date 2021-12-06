@@ -1,0 +1,7 @@
+
+useDynLib("minExCpp17", .registration=TRUE)
+
+import("methods")
+importFrom("Rcpp", "evalCpp")               # with Rcpp 0.11.0
+
+export("LinReg")

@@ -1,0 +1,14 @@
+Package: minExCpp17
+Type: Package
+Title: Mnimal Example for C++17 Trouble
+Version: 0.0.1
+Date: 2021-12-06
+Author: Dirk Eddelbuettel
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Derived from 'RcppSMC', this packages shows minimal
+ of C++17 trouble.
+License: GPL (>= 2)
+LazyLoad: yes
+Imports: Rcpp (>= 0.11.0), methods
+LinkingTo: Rcpp, RcppArmadillo
+LazyData: true
