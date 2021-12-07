@@ -11,21 +11,21 @@ Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
 Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
 #endif
 
-// LinReg_impl
-Rcpp::List LinReg_impl(arma::mat Data, unsigned long lNumber);
-RcppExport SEXP _minExCpp17_LinReg_impl(SEXP DataSEXP, SEXP lNumberSEXP) {
+// LinReg
+Rcpp::List LinReg(arma::mat Data, unsigned long lNumber);
+RcppExport SEXP _minExCpp17_LinReg(SEXP DataSEXP, SEXP lNumberSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< arma::mat >::type Data(DataSEXP);
     Rcpp::traits::input_parameter< unsigned long >::type lNumber(lNumberSEXP);
-    rcpp_result_gen = Rcpp::wrap(LinReg_impl(Data, lNumber));
+    rcpp_result_gen = Rcpp::wrap(LinReg(Data, lNumber));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_minExCpp17_LinReg_impl", (DL_FUNC) &_minExCpp17_LinReg_impl, 2},
+    {"_minExCpp17_LinReg", (DL_FUNC) &_minExCpp17_LinReg, 2},
     {NULL, NULL, 0}
 };
 
